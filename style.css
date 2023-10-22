@@ -264,7 +264,7 @@ body {
 .hide {
     opacity: 0;
     visibility: hidden;
-    animation: fadeOutAnimation 
+    animation: fadeOutAnimation
 }
 
 @keyframes fadeOutAnimation {
@@ -278,4 +278,17 @@ body {
         max-width: 0px;
         visibility: hidden;
     }
+}
+
+@media (max-width: 480px) {
+    .menu__wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+    
+      .menu__wrapper .action-buttons {
+        flex-direction: column;
+        margin-top: 20px;
+      }
 }
