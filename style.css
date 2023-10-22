@@ -377,7 +377,7 @@ body {
      
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     .menu__wrapper {
         display: flex;
         position: fixed;
@@ -464,4 +464,4 @@ body {
         height: 30px;
     }
      
-}
+}*/
