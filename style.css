@@ -70,12 +70,6 @@ body {
     background-color: var(--notification);
 }
 
-@media (max-width: 400px) {
-    .page__title {
-        display: none;
-    }
-}
-
 .logo {
     width: 32px;
     height: 32px;
@@ -310,7 +304,7 @@ body {
         color: var(--github);
         padding: 8px 12px;
         align-items: center;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 700;
         border-radius: 8px;
         text-decoration: none;
@@ -328,7 +322,7 @@ body {
     .navigation__menu__items {
         display: flex;
         flex-direction: column;
-        gap: 50px;;
+        gap: 20px;
         list-style-type: none;
         margin: 0px;
         margin-top: 16px;
