@@ -83,6 +83,8 @@ body {
 }
 
 .logo svg {
+    width: 35px;
+    height: 35px;
     fill: var(--github);
 }
 
@@ -281,14 +283,185 @@ body {
 }
 
 @media (max-width: 768px) {
-     .menu__wrapper {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
+    .menu__wrapper {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        z-index: 2;
+        gap: 24px; 
+        background-color: var(
+            --github-dark
+        );
+        height: var(--navbar-height);
+        padding: 50px 16px;
+        border-bottom: 1px solid var(--github-dark-border);
+        align-items: center;
+    }
 
-  .menu__wrapper .action-buttons {
-    flex-direction: column;
-    margin-top: 20px;
-  }
+    .logo svg {
+        width: 40px;
+        height: 40px;
+        fill: var(--github);
+    }
+    
+    .page__title {
+        color: var(--github);
+        padding: 8px 12px;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    .avatar-profile{
+        width: 35px ;
+        height: 35px ;
+    }
+
+    .navigation__menu__items {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;;
+        list-style-type: none;
+        margin: 0px;
+        margin-top: 16px;
+        padding: 0px;
+        color: var(--github-button-hover);
+    }
+
+    .navigation__menu__items > li {
+        display: flex;
+        gap: 10px;
+        border-radius: 4px;
+        font-size: 28px;;
+        height: 36px;
+        border-radius: 6px;
+        align-items: center;
+        cursor: pointer;
+        color: var(--color);
+        padding: 0px 8px;
+    }
+
+    .avatar-wrapper{
+        padding-bottom: 30px;
+    }
+    
+    .avatar-wrapper div {
+        font-size: 20px;
+    }
+
+    .avatar-wrapper img{
+        width: 100px;
+        height: 10px;
+    }
+    
+    .avatar-wrapper img{
+        width: 30px;
+    }
+
+    .avatar-wrapper .avatar-profile {
+        width: 60px;
+        height: 60px;
+    }
+    .navigation__menu__items li svg{
+        width: 30px;
+        height: 30px;
+    }
+     
+}
+
+@media (max-width: 480px) {
+    .menu__wrapper {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        z-index: 2;
+        gap: 24px; 
+        background-color: var(
+            --github-dark
+        );
+        height: var(--navbar-height);
+        padding: 50px 16px;
+        border-bottom: 1px solid var(--github-dark-border);
+        align-items: center;
+    }
+    
+    .page__title {
+        color: var(--github);
+        padding: 8px 12px;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    .avatar-profile{
+        width: 35px ;
+        height: 35px ;
+    }
+
+    .navigation__menu__items {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;;
+        list-style-type: none;
+        margin: 0px;
+        margin-top: 16px;
+        padding: 0px;
+        color: var(--github-button-hover);
+    }
+
+    .navigation__menu__items > li {
+        display: flex;
+        gap: 10px;
+        border-radius: 4px;
+        font-size: 28px;;
+        height: 36px;
+        border-radius: 6px;
+        align-items: center;
+        cursor: pointer;
+        color: var(--color);
+        padding: 0px 8px;
+    }
+
+    .avatar-wrapper{
+        padding-bottom: 30px;
+    }
+    
+    .avatar-wrapper div {
+        font-size: 20px;
+    }
+
+    .avatar-wrapper img{
+        width: 100px;
+        height: 10px;
+    }
+    
+    .avatar-wrapper img{
+        width: 30px;
+    }
+
+    .avatar-wrapper .avatar-profile {
+        width: 60px;
+        height: 60px;
+    }
+    .navigation__menu__items li svg{
+        width: 30px;
+        height: 30px;
+    }
+     
 }
